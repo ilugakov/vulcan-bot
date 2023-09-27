@@ -48,7 +48,9 @@ class VulcanClient:
             if not homework:
                 return []
 
-            homework_by_deadline = defaultdict(list, {hw.deadline.date: [hw] for hw in homework})
+            homework_by_deadline = defaultdict(list)
+            for hw in homework:
+                homework_by_deadline[hw.deadline.date].append(hw)
 
             closest_deadline = min(homework_by_deadline.keys())
             homework = homework_by_deadline[closest_deadline]

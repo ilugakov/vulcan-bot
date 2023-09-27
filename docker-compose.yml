@@ -1,0 +1,9 @@
+version: '3'
+services:
+  vulcan-bot:
+    build:
+      context: .
+    volumes:
+      - ./creds:/app/creds
+    env_file:
+      - .env

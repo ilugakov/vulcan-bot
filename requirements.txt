@@ -1,0 +1,7 @@
+aiocron==1.8
+aiogram==3.0.0
+aiohttp==3.8.5
+beautifulsoup4==4.12.2
+croniter==1.4.1
+python-dotenv==1.0.0
+vulcan_api==2.3.0
